@@ -1,0 +1,289 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--color-text);
+}
+:root{
+    --background-color:#E9ECEF;
+    --color-button:#FFAA00;
+    --icon-color:#FF7B00;
+    --color-text:#000;
+    --background-footer:#CED4DA;
+    --color-footer:#495057;
+}
+body{
+    font-family: sans-serif;
+    background-color: var(--background-color);
+}
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    background: var(--background-color);
+}
+img {
+    max-width: 30%;
+    height: auto;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+    font-size: .9rem;
+    max-width: 100%;
+}
+section#container {
+    display: flex;
+    padding-top: 4.5rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+#container h1{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+input#email {
+    width: 30%;
+    height: 5vh;
+    border: 2px solid var(--color-footer);
+}
+input#email::placeholder{
+    padding: .3rem;
+    font-size: .7rem;
+}
+input[type="button"] {
+    border: none;
+    background-color: var(--color-button);
+    padding: 0.3rem;
+    font-weight: bold;
+}
+section#features {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 4rem;
+    margin: 6rem 0 3rem 4rem;
+}
+div#first , div#second , div#third{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3rem;
+}
+#icon .fa{color: var(--icon-color);}
+#text h1{font-weight: bold;}
+#text p{
+    line-height: 1.2rem;
+    font-size: .78rem;
+}
+section#how-it-works {
+    display: flex;
+    justify-content: center;
+}
+iframe {
+    width: 50%;
+    height: 40vh;
+}
+section#pricing{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 0.5rem 2rem 0.5rem;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center; 
+    border: 1px solid;
+    gap: 0.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    width: calc(100% - 1rem);
+}
+article h1{
+    background-color: var(--background-footer);
+    padding: 1rem;
+    font-size: .8rem;
+    font-weight: bold;
+    width: 100%;
+}
+article h2{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+article p{
+    font-size: .8rem;
+    line-height: 1.3rem;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: var(--background-footer);
+    gap: 0.5rem;
+    padding: 1rem;
+    font-size: .75rem;
+}
+footer p{color: var(--color-footer);}
+
+@media all and (min-width:768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        background: var(--background-color);
+    }
+    img {
+        max-width: 30%;
+        height: auto;
+        position: relative;
+        right: 68px;
+        top: 5px;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        align-items: flex-start;
+        gap: 1.5rem;
+        font-size: .9em;
+        max-width: 100%;
+    }
+    section#container {
+        display: flex;
+        padding-top: 3.5rem;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    #container h1{
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    input#email {
+        width: 30%;
+        height: 5vh;
+        border: 2px solid var(--color-footer);
+    }
+    input#email::placeholder{
+        padding: .3rem;
+        font-size: .7rem;
+    }
+    input[type="button"] {
+        border: none;
+        background-color: var(--color-button);
+        padding: 0.3rem;
+        font-weight: bold;
+    }
+    section#features {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: baseline;
+        gap: 4rem;
+        margin: 6rem 0 3rem 4rem;
+    }
+    div#first , div#second , div#third{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+    #icon .fa{color: var(--icon-color);}
+    #text h1{font-weight: bold;}
+    #text p{
+        line-height: 1.2rem;
+        font-size: .78rem;
+    }
+    section#how-it-works {
+        display: flex;
+        justify-content: center;
+    }
+    iframe {
+        width: 50%;
+        height: 40vh;
+    }
+    section#pricing{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 2rem;
+        margin: 3rem 0.5rem 2rem 0.5rem;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center; 
+        border: 1px solid;
+        gap: 0.5rem;
+        text-align: center;
+        padding-bottom: 1rem;
+        width: calc(100% - 1rem);
+    }
+    article h1{
+        background-color: var(--background-footer);
+        padding: 1rem;
+        font-size: .8rem;
+        font-weight: bold;
+        width: 100%;
+    }
+    article h2{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    article p{
+        font-size: .8rem;
+        line-height: 1.3rem;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-color: var(--background-footer);
+        gap: 0.5rem;
+        padding: 1rem;
+        font-size: .75rem;
+    }
+    footer p{color: var(--color-footer);}
+}
